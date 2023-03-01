@@ -1,0 +1,995 @@
+/*! CSS Used from: Embedded */
+.ng-hide:not(.ng-hide-animate) {
+  display: none !important;
+}
+/*! CSS Used from: Embedded ; media=print */
+@media print {
+  body {
+    visibility: hidden;
+    display: none;
+  }
+}
+/*! CSS Used from: https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/theme.css */
+/*! @import https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib.css */
+/*! @import https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/scripts/lib/font-awesome/css/font-awesome.min.css */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-adjust:before {
+  content: "\f042";
+}
+.fa-ellipsis-v:before {
+  content: "\f142";
+}
+/*! end @import */
+/*! @import https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/bootstrap/bootstrap.min.css */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+header,
+main,
+nav {
+  display: block;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+small {
+  font-size: 80%;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+button,
+input {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+button {
+  overflow: visible;
+}
+button {
+  text-transform: none;
+}
+button {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+@media print {
+  *,
+  :before,
+  :after {
+    color: #000 !important;
+    text-shadow: none !important;
+    background: transparent !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+img {
+  vertical-align: middle;
+}
+small {
+  font-size: 85%;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal;
+}
+input[type="checkbox"]:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s,
+    -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+}
+.form-control[disabled] {
+  cursor: not-allowed;
+  background-color: #eee;
+  opacity: 1;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.checkbox label {
+  min-height: 20px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: 400;
+  cursor: pointer;
+}
+.checkbox input[type="checkbox"] {
+  position: absolute;
+  margin-top: 4px \9;
+  margin-left: -20px;
+}
+.has-success .help-block {
+  color: #3c763d;
+}
+.has-success .form-control {
+  border-color: #3c763d;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.has-success .form-control:focus {
+  border-color: #2b542c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+}
+.help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373;
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.btn:focus,
+.btn:active:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn:hover,
+.btn:focus {
+  color: #333;
+  text-decoration: none;
+}
+.btn:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.btn-default:active {
+  background-image: none;
+}
+.btn-link {
+  font-weight: 400;
+  color: #337ab7;
+  border-radius: 0;
+}
+.btn-link,
+.btn-link:active {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn-link,
+.btn-link:hover,
+.btn-link:focus,
+.btn-link:active {
+  border-color: transparent;
+}
+.btn-link:hover,
+.btn-link:focus {
+  color: #23527c;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-toggle:focus {
+  outline: 0;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+.dropdown-menu-right {
+  right: 0;
+  left: auto;
+}
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after {
+  clear: both;
+}
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+/*! end @import */
+/*! @import https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/base.css */
+.form-control {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+}
+a {
+  color: #e3007b;
+}
+a:hover,
+a:focus {
+  color: #2d4b9b;
+}
+.btn {
+  border-radius: 2px;
+  overflow: hidden;
+  text-overflow: clip;
+}
+.btn.btn-default {
+  background-color: #fff;
+  border-color: #e3007b;
+  color: #e3007b;
+}
+.btn.btn-default:hover,
+.btn.btn-default:focus {
+  background-color: #e6e6e6;
+  border-color: #929292;
+}
+.form-control {
+  border-radius: 2px;
+}
+.form-control:focus {
+  border-color: #66afe9;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+}
+.form-group {
+  position: relative;
+  margin-bottom: 8px;
+}
+.dropdown-menu {
+  border-radius: 2px;
+  font-size: 12px;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background: #ffe3f2;
+  color: #333;
+}
+html,
+body {
+  height: 100%;
+}
+.cb-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.cb-grow {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.cb-middle {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+@media (min-width: 1199px) {
+  .cb-flex {
+    margin-top: 0px;
+  }
+}
+.form-control {
+  border-color: #2d4b9b !important;
+}
+.cb-login-well.well {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -webkit-align-content: stretch;
+  align-content: stretch;
+  min-height: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.cb-login-well.well .right {
+  width: 66.66666666%;
+  -webkit-flex: 1;
+  flex: 1;
+  background: url(https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/assets/img/pic_txt_2.jpg)
+    no-repeat center left;
+  background-size: cover;
+}
+.cb-login-well.well .left {
+  background-color: #fff;
+  width: 33.33333333%;
+  padding: 180px 80px 0;
+  -webkit-transition: padding 0.5s;
+  transition: padding 0.5s;
+  position: relative;
+}
+.cb-login-well.well .left .logo {
+  margin: 0 auto 40px;
+  display: block;
+}
+.cb-login-well.well .left .content {
+  max-width: 380px;
+  width: 100%;
+  margin: 0 auto;
+}
+.cb-login-well.well .left .content .form-group {
+  margin-bottom: 25px;
+  position: relative;
+}
+.cb-login-well.well .left .content .form-group label {
+  color: #2d4b9b;
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.cb-login-well.well .left .content .form-group label a {
+  float: right;
+  color: #e3007b;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+.cb-login-well.well .left .content .form-group label a:hover,
+.cb-login-well.well .left .content .form-group label:focus {
+  color: #2d4b9b;
+}
+.cb-login-well.well .left .content .form-group input {
+  background-color: #f5f5f5;
+  color: #2d4b9b;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  border: 2px solid #b1b1b1;
+  border-radius: 4px;
+  padding: 7px 15px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.cb-login-well.well .left .content .form-group input:focus {
+  border-color: #e3007b;
+  box-shadow: none;
+}
+.cb-login-well.well .left .content .form-group input[type="password"],
+.cb-login-well.well .left .content .form-group input#password {
+  padding-left: 40px;
+}
+.cb-login-well.well .left .content .form-group input:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+.cb-login-well.well .left .content .form-group .icon-pass {
+  width: 14px;
+  fill: #b1b1b1;
+  position: absolute;
+  top: 36px;
+  left: 17px;
+}
+.cb-login-well.well .left .content .form-group .hide-pass {
+  display: none;
+}
+.cb-login-well.well .left .content .form-group .show-pass,
+.cb-login-well.well .left .content .form-group .hide-pass {
+  float: right;
+  color: #e3007b;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+.cb-login-well.well .left .content .form-group .show-pass .svg,
+.cb-login-well.well .left .content .form-group .hide-pass .svg {
+  width: 16px;
+  vertical-align: middle;
+  fill: #e3007b;
+  margin-right: 3px;
+}
+.cb-login-well.well .left .content .form-group .show-pass .svg:hover,
+.cb-login-well.well .left .content .form-group .hide-pass .svg:hover {
+  fill: #2d4b9b;
+  text-decoration: none;
+}
+.cb-login-well.well .left .content .form-group .show-pass:hover,
+.cb-login-well.well .left .content .form-group .hide-pass:hover {
+  color: #2d4b9b;
+}
+.cb-login-well.well .left .content .form-group .show-pass:hover .svg,
+.cb-login-well.well .left .content .form-group .hide-pass:hover .svg {
+  fill: #2d4b9b;
+}
+.cb-login-well.well .left .content .form-group .icon-success,
+.cb-login-well.well .left .content .form-group .icon-error {
+  width: 16px;
+  position: absolute;
+  top: 36px;
+  right: -30px;
+  display: none;
+}
+.cb-login-well.well .left .content .form-group .icon-success {
+  fill: #4eb747;
+}
+.cb-login-well.well .left .content .form-group .icon-error {
+  fill: #f53f15;
+}
+.cb-login-well.well .left .content .form-group small.help-block {
+  display: none !important;
+}
+.cb-login-well.well .left .content .form-group.has-success .icon-success {
+  display: block;
+}
+.cb-login-well.well .left .content .form-group.has-success .icon-error {
+  display: none;
+}
+.cb-login-well.well .left .content button {
+  color: #fff;
+  background: #2d4b9b;
+  padding: 12px 20px 15px 40px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  float: right;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.cb-login-well.well .left .content button:disabled {
+  background-color: #b1b1b1;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.4);
+}
+.cb-login-well.well .left .content button .svg {
+  width: 7px;
+  vertical-align: middle;
+  fill: #fff;
+  float: right;
+  margin: 7px 0 0 20px;
+}
+.cb-login-well.well .left .content button .svg:hover {
+  text-decoration: none;
+}
+.cb-login-well.well .left .content button:hover,
+.cb-login-well.well .left .content button:focus {
+  background-color: #2d4b9b;
+}
+.cb-login-well.well .left .content .foot {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: 268px;
+  margin-left: -134px;
+}
+.cb-login-well.well .left .content .foot.foot-static {
+  position: static;
+  bottom: auto;
+  left: auto;
+  width: auto;
+  margin-left: auto;
+}
+.cb-login-well.well .left .content .foot .redes {
+  padding: 0;
+  width: 156px;
+  margin: 20px auto 30px;
+}
+.cb-login-well.well .left .content .foot .redes li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 5px;
+}
+.cb-login-well.well .left .content .foot .redes li a {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+.cb-login-well.well .left .content .foot .redes li a .svg.facebook {
+  width: 32px;
+  height: 32px;
+  fill: #00468e;
+}
+.cb-login-well.well .left .content .foot .redes li a .svg.mail {
+  width: 32px;
+  height: 32px;
+  fill: #e84924;
+}
+.cb-login-well.well .left .content .foot .redes li a:hover .svg,
+.cb-login-well.well .left .content .foot .redes li a:focus .svg {
+  fill: #2d4b9b;
+}
+@media (max-width: 1499px) {
+  .cb-login-well.well .left {
+    padding: 100px 35px 0;
+  }
+  .cb-login-well.well .left .logo {
+    margin-bottom: 25px;
+  }
+  .cb-login-well.well .left .content .form-group {
+    margin-bottom: 12px;
+  }
+  .cb-login-well.well .left .content .form-group label {
+    letter-spacing: 0;
+  }
+  .cb-login-well.well .left .content .form-group label a {
+    letter-spacing: 0;
+  }
+  .cb-login-well.well .left .content .foot .redes {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1199px) {
+  .cb-login-well.well .left {
+    padding-top: 60px;
+    width: 40%;
+  }
+  .cb-login-well.well .left .logo {
+    margin-bottom: 30px;
+  }
+  .cb-login-well.well .left .content {
+    width: 100%;
+  }
+  .cb-login-well.well .right {
+    width: 60%;
+  }
+}
+@media (max-width: 1024px) {
+  .cb-login-well.well .left {
+    width: 100%;
+  }
+  .cb-login-well.well .right {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .cb-login-well.well .left {
+    padding-top: 30px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .cb-login-well.well .left .logo {
+    margin-bottom: 15px;
+    width: 170px;
+  }
+  .cb-login-well.well .left .content .form-group {
+    margin-bottom: 20px;
+  }
+  .cb-login-well.well .left .content .form-group label {
+    letter-spacing: 0;
+  }
+  .cb-login-well.well .left .content .form-group label a {
+    letter-spacing: 0;
+    font-size: 11px;
+    line-height: 18px;
+  }
+  .cb-login-well.well .left .content .form-group .icon-error,
+  .cb-login-well.well .left .content .form-group .icon-success {
+    top: 36px;
+    right: 13px;
+  }
+  .cb-login-well.well .left .content .foot .redes {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 340px) {
+  .cb-login-well.well .left {
+    padding-top: 20px !important;
+  }
+  .cb-login-well.well .left .logo {
+    margin-bottom: 0;
+    width: 130px;
+  }
+  .cb-login-well.well .left .content {
+    overflow: hidden;
+  }
+  .cb-login-well.well .left .content .form-group {
+    margin-bottom: 15px;
+  }
+  .cb-login-well.well .left .content .form-group label {
+    font-size: 11px;
+  }
+  .cb-login-well.well .left .content .form-group label a {
+    font-size: 11px;
+  }
+  .cb-login-well.well .left .content .form-group input {
+    height: 38px;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .cb-login-well.well .left .content .form-group input[type="password"],
+  .cb-login-well.well .left .content .form-group input#password {
+    padding-left: 30px;
+  }
+  .cb-login-well.well .left .content .form-group .icon-pass {
+    top: 37px;
+    left: 10px;
+  }
+  .cb-login-well.well .left .content .form-group .icon-error,
+  .cb-login-well.well .left .content .form-group .icon-success {
+    top: 33px;
+    right: 13px;
+  }
+  .cb-login-well.well .left .content .foot .redes {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+.bv-form .help-block {
+  margin-bottom: 0;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .well .right {
+    -ms-flex: 1;
+  }
+  .well .left .content .form-group {
+    margin-bottom: 20px;
+  }
+  .well .left .content .form-group .show-pass {
+    height: 20px;
+  }
+  .well .left .content .form-group .hide-pass {
+    height: 20px;
+  }
+  .well .left .content .form-group .icon-pass {
+    height: 15px;
+  }
+  .well .left .content .form-group .icon-success {
+    height: 12px;
+  }
+  .well .left .content .form-group .icon-error {
+    height: 16px;
+  }
+  .well .left .content button .svg {
+    height: 10px;
+  }
+  .well .left .content .foot .redes {
+    margin-bottom: 3px;
+    margin-top: 20px;
+  }
+}
+[ui-view="content"] {
+  display: none;
+}
+[ui-view="content"].ng-scope {
+  display: inherit;
+}
+/*! end @import */
+/*! end @import */
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  .st0 {
+    fill: none;
+  }
+}
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  .st0 {
+    fill: #ffffff;
+  }
+}
+/*! CSS Used fontfaces */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/roboto-v18-latin-ext_latin-300.eot");
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/roboto-v18-latin-ext_latin-300.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/roboto-v18-latin-ext_latin-300.woff")
+      format("woff"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/roboto-v18-latin-ext_latin-300.ttf")
+      format("truetype"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/roboto-v18-latin-ext_latin-300.svg#Roboto")
+      format("svg");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/roboto-v18-latin-ext_latin-regular.eot");
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/roboto-v18-latin-ext_latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/roboto-v18-latin-ext_latin-regular.woff")
+      format("woff"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/roboto-v18-latin-ext_latin-regular.ttf")
+      format("truetype"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/roboto-v18-latin-ext_latin-regular.svg#Roboto")
+      format("svg");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/roboto-v18-latin-ext_latin-700.eot");
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/roboto-v18-latin-ext_latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/roboto-v18-latin-ext_latin-700.woff")
+      format("woff"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/roboto-v18-latin-ext_latin-700.ttf")
+      format("truetype"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/roboto-v18-latin-ext_latin-700.svg#Roboto")
+      format("svg");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/open-sans-v15-latin-ext_latin-300.eot");
+  src: local("Open Sans Light"), local("OpenSans-Light"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/open-sans-v15-latin-ext_latin-300.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/open-sans-v15-latin-ext_latin-300.woff")
+      format("woff"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/open-sans-v15-latin-ext_latin-300.ttf")
+      format("truetype"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/open-sans-v15-latin-ext_latin-300.svg#OpenSans")
+      format("svg");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/open-sans-v15-latin-ext_latin-regular.eot");
+  src: local("Open Sans Regular"), local("OpenSans-Regular"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/open-sans-v15-latin-ext_latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/open-sans-v15-latin-ext_latin-regular.woff")
+      format("woff"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/open-sans-v15-latin-ext_latin-regular.ttf")
+      format("truetype"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/open-sans-v15-latin-ext_latin-regular.svg#OpenSans")
+      format("svg");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/open-sans-v15-latin-ext_latin-700.eot");
+  src: local("Open Sans Bold"), local("OpenSans-Bold"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/open-sans-v15-latin-ext_latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/open-sans-v15-latin-ext_latin-700.woff")
+      format("woff"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/open-sans-v15-latin-ext_latin-700.ttf")
+      format("truetype"),
+    url("https://fienet.bancofie.com.bo/CWC-IB/services/cobis/web/styles/themes/ib/fonts/open-sans-v15-latin-ext_latin-700.svg#OpenSans")
+      format("svg");
+}
